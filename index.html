@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1E3A8A">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%25" stop-color="%232563EB"/><stop offset="100%25" stop-color="%2310B981"/></linearGradient></defs><rect width="32" height="32" rx="7" fill="url(%23g)"/><path d="M8 22 L13 15 L18 19 L24 10" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>'>
+<title>Mapa da Gestão Financeira — Organize as finanças da sua empresa em minutos</title>
+<meta name="description" content="Controle total do seu caixa, lucro e despesas de forma simples, rápida e visual. Planilha profissional + dashboard + bônus. Acesso imediato e vitalício.">
+<link rel="canonical" href="https://mgf2.wesleyschroeder.com.br/">
+
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mapa da Gestão Financeira — Organize as finanças da sua empresa">
+<meta property="og:description" content="Controle do caixa, lucro e despesas de forma simples, visual e automática. Acesso imediato e vitalício.">
+<meta property="og:url" content="https://mgf2.wesleyschroeder.com.br/">
+<meta property="og:image" content="https://mgf2.wesleyschroeder.com.br/images/hero-mockup.png">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3103391829973250');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3103391829973250&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "sn3gbc8rkb");
+</script>
+<!-- End Microsoft Clarity -->
+
+<!-- Performance: preconnect + preload (fontes e ícones self-hosted) -->
+<link rel="preconnect" href="https://connect.facebook.net">
+<link rel="preload" as="image" href="images/hero-mockup.webp" type="image/webp" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/inter-700.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/inter-400.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/tabler-mgf.woff2" crossorigin>
+<style>
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/inter-400.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/inter-500.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/inter-600.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/inter-700.woff2') format('woff2')}
+@font-face{font-family:'tabler-icons';font-style:normal;font-weight:400;font-display:block;src:url('fonts/tabler-mgf.woff2') format('woff2')}
+.ti{font-family:"tabler-icons"!important;font-style:normal;font-weight:400!important;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;display:inline-block;speak:none}
+.ti-adjustments-dollar::before{content:"\f800"}
+.ti-alert-triangle::before{content:"\ea06"}
+.ti-bolt::before{content:"\ea38"}
+.ti-brand-mastercard::before{content:"\ef49"}
+.ti-briefcase::before{content:"\ea46"}
+.ti-building-factory-2::before{content:"\f082"}
+.ti-calculator::before{content:"\eb80"}
+.ti-calendar-dollar::before{content:"\f827"}
+.ti-chart-arrows-vertical::before{content:"\ee29"}
+.ti-chart-pie::before{content:"\ea5d"}
+.ti-check::before{content:"\ea5e"}
+.ti-chevron-down::before{content:"\ea5f"}
+.ti-circle-check::before{content:"\ea67"}
+.ti-clock-hour-3::before{content:"\f318"}
+.ti-clock-hour-4::before{content:"\f319"}
+.ti-coin::before{content:"\eb82"}
+.ti-credit-card::before{content:"\ea84"}
+.ti-eye-check::before{content:"\ee88"}
+.ti-infinity::before{content:"\eb69"}
+.ti-layout-dashboard::before{content:"\f02c"}
+.ti-mood-annoyed::before{content:"\f2e0"}
+.ti-mood-confuzed::before{content:"\eaf3"}
+.ti-mood-cry::before{content:"\ecbb"}
+.ti-mood-empty::before{content:"\eeb5"}
+.ti-mood-nervous::before{content:"\ef96"}
+.ti-mood-sad::before{content:"\eaf6"}
+.ti-player-play::before{content:"\ed46"}
+.ti-refresh::before{content:"\eb13"}
+.ti-report-money::before{content:"\eecd"}
+.ti-rocket::before{content:"\ec45"}
+.ti-school::before{content:"\ecf7"}
+.ti-table::before{content:"\eba1"}
+.ti-trending-up::before{content:"\eb43"}
+.ti-user-star::before{content:"\f7d1"}
+.ti-x::before{content:"\eb55"}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #0F172A; line-height: 1.5; background: #fff; -webkit-font-smoothing: antialiased; }
+button { font-family: inherit; cursor: pointer; border: none; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+img { max-width: 100%; display: block; }
+
+:root {
+  --b1: #1E3A8A;
+  --b2: #2563EB;
+  --g1: #10B981;
+  --g2: #059669;
+  --t1: #0F172A;
+  --t2: #475569;
+  --t3: #94A3B8;
+  --bg: #FFFFFF;
+  --bg2: #F8FAFC;
+  --bd: #E5E7EB;
+  --amber: #FBBF24;
+  --amber-h: #F59E0B;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+
+/* NAV */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 0.5px solid var(--bd);
+}
+.nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand-icon {
+  width: 36px; height: 36px;
+  background: linear-gradient(135deg, #2563EB 0%, #10B981 100%);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff;
+}
+.brand-icon i { font-size: 20px; }
+.brand-text { font-size: 17px; font-weight: 600; line-height: 1; }
+.brand-sub { font-size: 10px; color: var(--t3); text-transform: uppercase; letter-spacing: 0.6px; margin-top: 3px; font-weight: 500; }
+.nav-links { display: flex; gap: 28px; font-size: 14px; color: var(--t2); font-weight: 500; }
+.nav-links a { transition: color 0.15s; }
+.nav-links a:hover { color: var(--t1); }
+.nav-actions { display: flex; gap: 10px; align-items: center; }
+.btn-ghost { background: transparent; color: var(--t1); padding: 8px 14px; font-size: 14px; font-weight: 500; }
+.btn-cta-nav {
+  background: var(--amber); color: var(--t1);
+  padding: 10px 18px; border-radius: 8px;
+  font-size: 14px; font-weight: 600;
+  transition: background 0.15s;
+}
+.btn-cta-nav:hover { background: var(--amber-h); }
+
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #1E3A8A 0%, #2563EB 40%, #10B981 100%);
+  padding: 88px 0 96px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute; top: -180px; right: -140px;
+  width: 500px; height: 500px; border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+}
+.hero::after {
+  content: "";
+  position: absolute; bottom: -200px; left: -100px;
+  width: 420px; height: 420px; border-radius: 50%;
+  background: rgba(255,255,255,0.04);
+}
+.hero-inner { position: relative; z-index: 1; }
+.hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 56px; align-items: center; }
+.hero-copy { max-width: 640px; }
+.h-badge {
+  display: inline-flex; align-items: center; gap: 14px;
+  padding: 0 0 0 16px;
+  border-left: 3px solid var(--amber);
+  font-size: 11px; margin-bottom: 32px;
+  text-transform: uppercase; letter-spacing: 2.4px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.4;
+}
+.h-badge::after {
+  content: ""; width: 32px; height: 1px;
+  background: rgba(255,255,255,0.4);
+}
+
+/* HERO MOCKUP */
+.hero-mockup {
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 40px;
+  margin-right: -60px;
+  transform: scale(1.0);
+  transform-origin: right center;
+}
+.hero-mockup::before {
+  content: "";
+  position: absolute;
+  top: 10%; left: 10%; right: 10%; bottom: 20%;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.22) 0%, rgba(134,239,172,0.15) 40%, transparent 70%);
+  filter: blur(30px);
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-mockup::after {
+  content: "";
+  position: absolute;
+  bottom: -6%;
+  left: 10%; right: 10%;
+  height: 40px;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.25) 40%, transparent 75%);
+  filter: blur(18px);
+  z-index: 0;
+}
+.hero-mockup img {
+  width: 100%; height: auto; display: block;
+  position: relative; z-index: 1;
+  filter: drop-shadow(0 40px 60px rgba(0,0,0,0.4)) drop-shadow(0 15px 25px rgba(0,0,0,0.25));
+}
+
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero-mockup { max-width: 520px; margin: 0 auto; transform: none; }
+}
+.hero h1 {
+  font-size: 52px; font-weight: 700;
+  line-height: 1.08; margin-bottom: 20px;
+  letter-spacing: -1.2px;
+}
+.hero h1 span { color: #FDE68A; }
+.h-sub { font-size: 17px; color: rgba(255,255,255,0.9); line-height: 1.6; margin-bottom: 36px; max-width: 640px; }
+.bullets {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 12px 32px; margin-bottom: 40px;
+  max-width: 640px;
+}
+.bullet { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+.bullet i { color: #86EFAC; font-size: 18px; flex-shrink: 0; }
+.ctas { display: flex; gap: 14px; margin-bottom: 20px; flex-wrap: wrap; }
+.cta-p {
+  background: var(--amber); color: var(--t1);
+  padding: 15px 30px; border-radius: 10px;
+  font-size: 15px; font-weight: 600;
+  display: inline-flex; align-items: center; gap: 10px;
+  transition: background 0.15s, transform 0.1s;
+}
+.cta-p:hover { background: var(--amber-h); }
+.cta-p:active { transform: scale(0.98); }
+.cta-p i { font-size: 18px; }
+.cta-s {
+  background: rgba(255,255,255,0.1); color: #fff;
+  padding: 15px 26px; border-radius: 10px;
+  font-size: 15px; font-weight: 600;
+  border: 0.5px solid rgba(255,255,255,0.5);
+  display: inline-flex; align-items: center; gap: 10px;
+  transition: background 0.15s;
+}
+.cta-s:hover { background: rgba(255,255,255,0.18); }
+.cta-s i { font-size: 18px; }
+.reinf {
+  font-size: 13px; color: rgba(255,255,255,0.75);
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+}
+.dot { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,0.5); }
+
+/* Seta de rolagem na divisa da 1ª dobra */
+.scroll-cue {
+  display: flex; align-items: center; justify-content: center;
+  width: 58px; height: 58px; border-radius: 50%;
+  background: var(--amber); color: var(--t1);
+  margin: -29px auto 0; position: relative; z-index: 50;
+  box-shadow: 0 12px 26px -6px rgba(15,23,42,0.35);
+  animation: scrollBounce 1.6s ease-in-out infinite;
+  transition: background 0.15s;
+}
+.scroll-cue:hover { background: var(--amber-h); }
+.scroll-cue i { font-size: 30px; }
+@keyframes scrollBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(7px); } }
+@media (max-width: 768px) { .scroll-cue { width: 50px; height: 50px; margin-top: -25px; } .scroll-cue i { font-size: 26px; } }
+
+@media (max-width: 768px) {
+  .hero { padding: 60px 0 64px; }
+  .hero h1 { font-size: 36px; }
+  .h-sub { font-size: 15px; }
+  .bullets { grid-template-columns: 1fr; }
+}
+
+/* TRUST */
+.trust { background: var(--bg2); padding: 32px 0; border-bottom: 0.5px solid var(--bd); }
+.trust-inner { text-align: center; }
+.trust-l { font-size: 11px; color: var(--t2); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 18px; font-weight: 500; }
+.trust-lg { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+.trust-chip {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #fff; border: 0.5px solid var(--bd);
+  border-radius: 999px; padding: 10px 20px;
+  font-size: 14px; font-weight: 600; color: var(--t1);
+}
+.trust-chip i { color: var(--g2); font-size: 18px; }
+
+/* SECTIONS */
+.sect { padding: 96px 0; }
+.sect-alt { background: var(--bg2); }
+.sect-t {
+  font-size: 40px; font-weight: 700;
+  text-align: center; margin-bottom: 16px;
+  letter-spacing: -0.8px;
+  max-width: 800px; margin-left: auto; margin-right: auto;
+}
+.sect-s {
+  font-size: 17px; color: var(--t2);
+  text-align: center; max-width: 640px;
+  margin: 0 auto 56px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .sect { padding: 64px 0; }
+  .sect-t { font-size: 30px; }
+  .sect-s { font-size: 15px; margin-bottom: 40px; }
+}
+
+/* PROBLEMA */
+.p-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1000px; margin: 0 auto; }
+@media (max-width: 860px) { .p-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .p-grid { grid-template-columns: 1fr; } }
+.p-card { background: #fff; border: 0.5px solid var(--bd); border-radius: 14px; padding: 28px 24px; page-break-inside: avoid; }
+.p-ico { width: 48px; height: 48px; background: #FEF2F2; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #DC2626; margin-bottom: 18px; }
+.p-ico i { font-size: 24px; }
+.p-t { font-size: 17px; font-weight: 600; margin-bottom: 8px; line-height: 1.35; }
+.p-d { font-size: 14px; color: var(--t2); line-height: 1.6; }
+
+/* CALLOUT (avisos) */
+.callout {
+  max-width: 760px; margin: 48px auto 0;
+  background: #FFFBEB; border: 1px solid #FDE68A; border-left: 4px solid var(--amber-h);
+  border-radius: 12px; padding: 22px 26px;
+  display: flex; gap: 14px; align-items: flex-start;
+  font-size: 16px; color: #92400E; line-height: 1.55; font-weight: 500;
+}
+.callout i { color: var(--amber-h); font-size: 24px; flex-shrink: 0; margin-top: 1px; }
+.callout strong { color: #78350F; }
+
+/* SOLUÇÃO — SEÇÃO SHOWCASE */
+.showcase {
+  position: relative;
+  padding: 96px 0 80px;
+  background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+  overflow: hidden;
+}
+.showcase-inner { position: relative; z-index: 2; }
+
+.sc-deco-1 {
+  position: absolute; pointer-events: none; z-index: 2;
+  top: 300px; left: 8%;
+  width: 130px; height: 130px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.95) 0%, rgba(219,234,254,0.35) 100%);
+  border: 1.5px solid rgba(16,185,129,0.28);
+  box-shadow: 0 20px 40px -15px rgba(16,185,129,0.18), inset 0 0 20px rgba(255,255,255,0.5);
+  display: flex; align-items: flex-end; justify-content: center;
+  padding: 32px 26px;
+  gap: 6px;
+}
+.sc-deco-1 .sc-bar {
+  flex: 1; background: linear-gradient(180deg, #6EE7B7 0%, #10B981 100%);
+  border-radius: 4px 4px 2px 2px;
+}
+.sc-deco-1 .sc-bar:nth-child(1) { height: 45%; }
+.sc-deco-1 .sc-bar:nth-child(2) { height: 70%; }
+.sc-deco-1 .sc-bar:nth-child(3) { height: 90%; }
+
+.sc-deco-2 {
+  position: absolute; pointer-events: none; z-index: 2;
+  top: 300px; right: 7%;
+  width: 170px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px 18px;
+  border: 1px solid rgba(226,232,240,0.9);
+  box-shadow: 0 20px 40px -15px rgba(16,185,129,0.25);
+  display: flex; align-items: center; gap: 14px;
+}
+.sc-deco-2 .sc-pie {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: conic-gradient(#10B981 0deg 220deg, #DBEAFE 220deg 360deg);
+  flex-shrink: 0;
+}
+.sc-deco-2 .sc-lines { display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.sc-deco-2 .sc-lines span {
+  height: 6px; background: linear-gradient(90deg, #E2E8F0 0%, #F1F5F9 100%);
+  border-radius: 3px; display: block;
+}
+.sc-deco-2 .sc-lines span:first-child { width: 100%; background: linear-gradient(90deg, #10B981 0%, #6EE7B7 100%); }
+.sc-deco-2 .sc-lines span:nth-child(2) { width: 75%; }
+.sc-deco-2 .sc-lines span:nth-child(3) { width: 55%; }
+
+.sc-dots {
+  position: absolute; z-index: 1;
+  background-image: radial-gradient(circle, #94A3B8 1.2px, transparent 1.2px);
+  background-size: 12px 12px;
+  opacity: 0.35;
+  pointer-events: none;
+}
+.sc-dots-1 { top: 440px; left: 10%; width: 100px; height: 80px; }
+.sc-dots-2 { top: 440px; right: 10%; width: 100px; height: 80px; }
+
+.sc-wave {
+  position: absolute; pointer-events: none; z-index: 1;
+}
+.sc-wave-1 { top: 470px; left: 14%; width: 280px; opacity: 0.75; }
+.sc-wave-2 { top: 400px; right: 3%; width: 340px; opacity: 0.9; }
+
+.sc-blush {
+  position: absolute; pointer-events: none;
+  border-radius: 50%;
+  filter: blur(70px);
+  z-index: 0;
+}
+.sc-blush-blue-1 {
+  top: 240px; left: -80px;
+  width: 520px; height: 480px;
+  background: radial-gradient(circle at center, rgba(59,130,246,0.28) 0%, rgba(59,130,246,0.14) 45%, transparent 75%);
+}
+.sc-blush-green-1 {
+  top: 220px; right: -100px;
+  width: 540px; height: 500px;
+  background: radial-gradient(circle at center, rgba(16,185,129,0.28) 0%, rgba(52,211,153,0.14) 45%, transparent 75%);
+}
+.sc-blush-blue-2 {
+  top: 380px; left: 18%;
+  width: 340px; height: 340px;
+  background: radial-gradient(circle at center, rgba(96,165,250,0.22) 0%, transparent 70%);
+}
+.sc-blush-green-2 {
+  top: 380px; right: 18%;
+  width: 360px; height: 360px;
+  background: radial-gradient(circle at center, rgba(52,211,153,0.22) 0%, transparent 70%);
+}
+.sc-blush-center {
+  top: 460px; left: 50%;
+  transform: translateX(-50%);
+  width: 720px; height: 260px;
+  background: radial-gradient(ellipse at center, rgba(191,219,254,0.5) 0%, rgba(167,243,208,0.35) 50%, transparent 80%);
+  filter: blur(50px);
+}
+
+.sc-head { text-align: center; max-width: 900px; margin: 0 auto 0; position: relative; z-index: 3; }
+.sc-head h2 {
+  font-size: 48px; font-weight: 700;
+  line-height: 1.08; letter-spacing: -1.5px;
+  color: var(--t1); margin-bottom: 10px;
+}
+.sc-head p {
+  font-size: 18px; color: var(--t2);
+  line-height: 1.5; max-width: 620px; margin: 0 auto;
+}
+
+.mockup-wrap { display: flex; justify-content: center; margin-bottom: 72px; position: relative; z-index: 3; margin-top: 24px; padding-bottom: 0; }
+.mockup-wrap img { width: 100%; max-width: 1100px; height: auto; display: block; position: relative; z-index: 3; }
+.mockup-wrap::after {
+  content: "";
+  position: absolute;
+  bottom: 2%;
+  left: 20%; right: 20%;
+  height: 34px;
+  background: radial-gradient(ellipse at center, rgba(15,23,42,0.42) 0%, rgba(15,23,42,0.2) 40%, transparent 78%);
+  filter: blur(14px);
+  z-index: 4;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .sc-head h2 { font-size: 32px; }
+  .sc-deco-1 { width: 68px; height: 68px; top: 250px; padding: 10px 8px; }
+  .sc-deco-2 { width: 120px; padding: 10px 12px; top: 240px; }
+  .sc-deco-2 .sc-pie { width: 28px; height: 28px; }
+  .sc-dots-1, .sc-dots-2 { display: none; }
+  .sc-wave-1, .sc-wave-2 { display: none; }
+  .sc-blush-blue-2, .sc-blush-green-2 { display: none; }
+}
+
+.sol-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.sol-card { background: #fff; border: 0.5px solid var(--bd); border-radius: 14px; padding: 24px 20px; page-break-inside: avoid; }
+.sol-ico { width: 42px; height: 42px; background: linear-gradient(135deg, #DBEAFE 0%, #D1FAE5 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #059669; margin-bottom: 16px; }
+.sol-ico i { font-size: 22px; }
+.sol-t { font-size: 15px; font-weight: 600; margin-bottom: 8px; line-height: 1.3; }
+.sol-d { font-size: 13px; color: var(--t2); line-height: 1.55; }
+@media (max-width: 1100px) { .sol-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 720px) { .sol-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .sol-grid { grid-template-columns: 1fr; } }
+
+.sc-foot { text-align: center; max-width: 720px; margin: 56px auto 0; font-size: 17px; color: var(--t2); line-height: 1.6; position: relative; z-index: 3; }
+.sc-foot strong { color: var(--t1); }
+
+/* Imagem do dashboard em destaque maior + frase "Imagine você" depois dela */
+.mockup-wrap--big { margin-bottom: 10px; margin-top: 20px; }
+.mockup-wrap--big img { max-width: 1280px; }
+.sc-caption { text-align: center; font-size: 12px; font-style: italic; color: var(--t3); margin: 0 auto 26px; position: relative; z-index: 3; }
+.sc-imagine {
+  text-align: center; font-size: 42px; font-weight: 700;
+  letter-spacing: -1px; color: var(--t1);
+  margin: 8px auto 48px; position: relative; z-index: 3;
+}
+.sc-imagine span { background: linear-gradient(135deg,#2563EB,#10B981); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.sc-imagine::after { content: ""; display: block; width: 66px; height: 4px; border-radius: 2px; margin: 18px auto 0; background: linear-gradient(90deg,#2563EB,#10B981); }
+
+/* PASSOS (zig-zag com mockups) */
+.steps-zig { display: flex; flex-direction: column; gap: 56px; max-width: 1080px; margin: 0 auto; }
+.step-row { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.step-row.flip .step-media { order: 2; }
+.step-media { position: relative; }
+.step-media img {
+  width: 100%; height: auto; border-radius: 14px; display: block;
+  filter: drop-shadow(0 26px 46px rgba(15,23,42,0.18)) drop-shadow(0 8px 16px rgba(15,23,42,0.1));
+}
+.step-kicker { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.step-label { font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: var(--t3); font-weight: 600; }
+.step-num {
+  font-size: 50px; font-weight: 700; line-height: 1;
+  background: linear-gradient(135deg, #2563EB, #10B981);
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.step-t { font-size: 21px; font-weight: 700; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.3px; line-height: 1.25; }
+.step-d { font-size: 15px; color: var(--t2); line-height: 1.65; max-width: 460px; }
+@media (max-width: 820px) {
+  .step-row, .step-row.flip { grid-template-columns: 1fr; gap: 22px; }
+  .step-row.flip .step-media { order: 0; }
+}
+
+/* RECURSOS */
+.f-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1000px; margin: 0 auto; }
+@media (max-width: 860px) { .f-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .f-grid { grid-template-columns: 1fr; } }
+.f-card { background: #fff; border: 0.5px solid var(--bd); border-radius: 14px; padding: 26px 22px; page-break-inside: avoid; transition: transform 0.15s, box-shadow 0.15s; }
+.f-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px -8px rgba(30,58,138,0.1); }
+.f-ico { width: 42px; height: 42px; background: #EFF6FF; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #2563EB; margin-bottom: 16px; }
+.f-ico i { font-size: 22px; }
+.f-t { font-size: 16px; font-weight: 600; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.f-d { font-size: 13.5px; color: var(--t2); line-height: 1.6; }
+.f-badge {
+  font-size: 10px; background: linear-gradient(135deg, #2563EB, #10B981);
+  color: #fff; padding: 2px 7px; border-radius: 5px;
+  font-weight: 600; letter-spacing: 0.4px;
+}
+
+/* PÚBLICO */
+.a-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.a-card { background: #fff; border: 0.5px solid var(--bd); border-radius: 12px; padding: 24px 18px; text-align: left; transition: transform 0.15s, border-color 0.15s; display: flex; align-items: center; gap: 12px; min-height: 84px; }
+.a-card:hover { transform: translateY(-2px); border-color: #10B981; }
+.a-card i { color: #059669; font-size: 22px; flex-shrink: 0; }
+.a-l { font-size: 14.5px; font-weight: 600; color: var(--t1); line-height: 1.35; }
+@media (max-width: 900px) { .a-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .a-grid { grid-template-columns: 1fr; } }
+
+/* CUSTO (dor) */
+.custo-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: center; }
+.custo-copy p { font-size: 16px; color: var(--t2); line-height: 1.7; margin-bottom: 18px; }
+.custo-copy p strong { color: var(--t1); }
+.custo-list { margin: 0 0 18px; }
+.custo-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 15px; color: var(--t1); margin-bottom: 10px; line-height: 1.5; }
+.custo-list li i { color: #DC2626; font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+.custo-visual {
+  aspect-ratio: 4 / 5; border-radius: 20px; overflow: hidden;
+  background: linear-gradient(135deg, #EFF6FF 0%, #D1FAE5 100%);
+  border: 1px solid var(--bd);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 24px 60px -24px rgba(15,23,42,0.25);
+}
+.custo-visual img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 900px) { .custo-grid { grid-template-columns: 1fr; gap: 36px; } .custo-visual { max-width: 400px; margin: 0 auto; } }
+
+/* AUTOR (seção escura) */
+.course {
+  background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%);
+  padding: 96px 0;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.course::before {
+  content: ""; position: absolute; top: -120px; right: -80px;
+  width: 380px; height: 380px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(251,191,36,0.15) 0%, transparent 70%);
+}
+.course::after {
+  content: ""; position: absolute; bottom: -140px; left: -100px;
+  width: 400px; height: 400px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(16,185,129,0.12) 0%, transparent 70%);
+}
+.course-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.course-tag {
+  display: inline-flex; align-items: center; gap: 14px;
+  padding: 0 0 0 16px;
+  border-left: 3px solid var(--amber);
+  font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 2.4px;
+  color: var(--amber);
+  margin-bottom: 28px;
+  line-height: 1.4;
+}
+.course-tag::after {
+  content: ""; width: 32px; height: 1px;
+  background: rgba(251,191,36,0.5);
+}
+.course-t {
+  font-size: 40px; font-weight: 700;
+  line-height: 1.1; margin-bottom: 20px; letter-spacing: -0.8px;
+}
+.course-t span { color: var(--amber); }
+.course-sub {
+  font-size: 16px; line-height: 1.7;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 20px;
+}
+.course-list { margin: 0 0 32px; padding: 0; }
+.course-list li {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 10px 0;
+  font-size: 15px;
+  color: rgba(255,255,255,0.95);
+  border-bottom: 0.5px solid rgba(255,255,255,0.08);
+}
+.course-list li:last-child { border-bottom: 0; }
+.course-list li i {
+  color: var(--amber); font-size: 20px; flex-shrink: 0; margin-top: 1px;
+}
+.course-meta {
+  display: flex; gap: 24px; margin-bottom: 0; flex-wrap: wrap;
+}
+.course-meta-item {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; color: rgba(255,255,255,0.8);
+}
+.course-meta-item i { color: var(--amber); font-size: 18px; }
+
+.course-visual {
+  aspect-ratio: 4 / 5;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(251,191,36,0.15) 0%, rgba(16,185,129,0.12) 100%);
+  border: 1px solid rgba(255,255,255,0.15);
+  position: relative;
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 30px 80px -30px rgba(0,0,0,0.5);
+  padding: 0;
+}
+.course-visual-badge {
+  position: absolute; top: 24px; left: 24px;
+  background: var(--amber); color: var(--t1);
+  font-size: 10px; font-weight: 700;
+  padding: 6px 12px; border-radius: 999px;
+  text-transform: uppercase; letter-spacing: 1px;
+  display: flex; align-items: center; gap: 6px;
+  z-index: 2;
+}
+.course-visual img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .course-inner { grid-template-columns: 1fr; gap: 40px; }
+  .course-t { font-size: 30px; }
+  .course-visual { max-width: 400px; margin: 0 auto; }
+}
+
+/* RECAP (value stack) */
+.recap { max-width: 720px; margin: 0 auto; }
+.recap-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  background: var(--bg2); border-radius: 999px;
+  padding: 16px 26px; margin-bottom: 12px;
+}
+.recap-name { font-size: 15px; color: var(--t1); }
+.recap-name strong { color: var(--b2); font-weight: 700; }
+.recap-price { font-size: 15px; font-weight: 700; color: #DC2626; text-decoration: line-through; white-space: nowrap; }
+.recap-total { text-align: center; margin-top: 28px; font-size: 18px; color: var(--t2); }
+.recap-total s { color: #DC2626; font-weight: 700; }
+.recap-lead { text-align: center; margin-top: 10px; font-size: 18px; color: var(--t1); font-weight: 600; }
+
+/* OFERTA (planos) */
+.plans { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 8px; max-width: 880px; margin-left: auto; margin-right: auto; align-items: stretch; }
+.plan { background: #fff; border: 0.5px solid var(--bd); border-radius: 16px; padding: 36px 30px; display: flex; flex-direction: column; position: relative; page-break-inside: avoid; }
+.plan.rec { border: 2px solid #10B981; box-shadow: 0 10px 40px -12px rgba(16,185,129,0.25); }
+.pl-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #2563EB, #10B981); color: #fff; font-size: 11px; font-weight: 600; padding: 5px 14px; border-radius: 999px; letter-spacing: 0.3px; white-space: nowrap; }
+.pl-name { font-size: 13px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--t2); margin-bottom: 10px; font-weight: 700; }
+.pl-tag { font-size: 13.5px; color: var(--t2); margin-bottom: 20px; min-height: 40px; line-height: 1.5; }
+.pl-includes { padding: 0; margin: 0 0 22px; font-size: 13.5px; line-height: 1.6; }
+.pl-includes li { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 8px; }
+.pl-includes li i { color: #10B981; font-size: 16px; margin-top: 2px; flex-shrink: 0; }
+.pl-old { font-size: 14px; color: var(--t3); text-decoration: line-through; margin-bottom: 4px; }
+.pl-price { display: flex; align-items: baseline; gap: 4px; margin-bottom: 4px; }
+.pl-cur { font-size: 18px; color: var(--t2); font-weight: 600; }
+.pl-val { font-size: 46px; font-weight: 700; line-height: 1; letter-spacing: -1px; }
+.pl-per { font-size: 14px; color: var(--t2); }
+.pl-sub { font-size: 13px; color: var(--t2); margin-bottom: 20px; }
+.pl-sub strong { color: var(--t1); }
+.pl-cta { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 58px; padding: 14px 16px; border-radius: 10px; border: 0.5px solid var(--bd); background: #fff; font-size: 14.5px; font-weight: 700; transition: all 0.15s; color: var(--t1); text-align: center; text-transform: uppercase; letter-spacing: 0.3px; line-height: 1.2; }
+
+/* Selo "Acesso imediato e vitalício" — cresce para alinhar os preços */
+.pl-access {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  flex: 1 1 auto; min-height: 54px; margin: 2px 0 20px; padding: 14px 16px;
+  background: linear-gradient(135deg, #EFF6FF 0%, #D1FAE5 100%);
+  border: 1px solid #BFDBFE; border-radius: 12px;
+  font-size: 13.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px;
+  color: #0F172A; text-align: center; line-height: 1.25;
+}
+.pl-access i { font-size: 22px; color: var(--g2); flex-shrink: 0; }
+.plan.rec .pl-access { background: linear-gradient(135deg, #ECFDF5 0%, #BBF7D0 100%); border-color: #86EFAC; }
+
+/* Itens do combo em destaque (um fundo arredondado em cada) */
+.pl-includes--hl li {
+  background: #F0FDF4; border: 1px solid #D1FAE5; border-radius: 10px;
+  padding: 12px 14px; margin-bottom: 10px; align-items: center;
+  font-size: 14px; font-weight: 600; color: var(--t1);
+}
+.pl-includes--hl li i { color: var(--g2); margin-top: 0; }
+.pl-cta:hover { background: var(--bg2); }
+.plan.rec .pl-cta { background: var(--g1); border-color: transparent; color: #fff; }
+.plan.rec .pl-cta:hover { background: var(--g2); }
+.plan.single .pl-cta { background: var(--amber); border-color: transparent; }
+.plan.single .pl-cta:hover { background: var(--amber-h); }
+.pl-note { text-align: center; font-size: 12px; color: var(--t3); margin-top: 12px; }
+.pay { display: flex; align-items: center; justify-content: center; gap: 24px; margin-top: 28px; font-size: 14px; color: var(--t2); font-weight: 600; flex-wrap: wrap; }
+.pay span { display: inline-flex; align-items: center; gap: 8px; }
+.pay i { font-size: 20px; color: var(--b2); }
+@media (max-width: 760px) { .plans { grid-template-columns: 1fr; } }
+
+/* MOCKUP no topo do card */
+.pl-media { margin-bottom: 20px; }
+.pl-media img { width: 100%; height: auto; border-radius: 10px; display: block; }
+
+/* CONTADOR REGRESSIVO */
+.countdown {
+  max-width: 540px; margin: 36px auto 0;
+  background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%);
+  color: #fff; border-radius: 16px; padding: 22px 24px; text-align: center;
+  box-shadow: 0 16px 38px -16px rgba(30,58,138,0.55);
+}
+.cd-label { font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: var(--amber); margin-bottom: 14px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+.cd-label i { font-size: 18px; }
+.cd-clock { display: flex; align-items: center; justify-content: center; gap: 12px; }
+.cd-box { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 10px 16px; min-width: 76px; display: flex; flex-direction: column; gap: 3px; }
+.cd-box span { font-size: 34px; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+.cd-box small { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.6); }
+.cd-sep { font-size: 30px; font-weight: 700; color: rgba(255,255,255,0.4); }
+@media (max-width: 480px) {
+  .countdown { padding: 18px 16px; }
+  .cd-box { min-width: 64px; padding: 8px 12px; }
+  .cd-box span { font-size: 28px; }
+}
+
+/* CTA FINAL */
+.cta-final {
+  background: linear-gradient(135deg, #1E3A8A 0%, #2563EB 40%, #10B981 100%);
+  padding: 88px 0; text-align: center; color: #fff;
+  position: relative; overflow: hidden;
+}
+.cta-final::before {
+  content: ""; position: absolute; top: -100px; right: -80px;
+  width: 300px; height: 300px; border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+}
+.cta-final-inner { position: relative; z-index: 1; }
+.cta-final h2 { font-size: 40px; font-weight: 700; margin-bottom: 16px; letter-spacing: -0.8px; max-width: 760px; margin-left: auto; margin-right: auto; }
+.cta-final p { font-size: 17px; color: rgba(255,255,255,0.9); margin: 0 auto 32px; max-width: 560px; line-height: 1.6; }
+.cta-fb { display: inline-flex; align-items: center; gap: 10px; background: var(--amber); color: var(--t1); padding: 17px 34px; border-radius: 10px; font-size: 16px; font-weight: 600; margin-bottom: 16px; transition: background 0.15s, transform 0.1s; }
+.cta-fb:hover { background: var(--amber-h); }
+.cta-fb:active { transform: scale(0.98); }
+.cta-fb i { font-size: 20px; }
+.cta-fs { font-size: 13px; color: rgba(255,255,255,0.75); }
+
+@media (max-width: 768px) { .cta-final h2 { font-size: 30px; } }
+
+/* FAQ */
+.faq { max-width: 780px; margin: 0 auto; }
+.faq-i { background: #fff; border: 0.5px solid var(--bd); border-radius: 12px; margin-bottom: 12px; overflow: hidden; page-break-inside: avoid; }
+.faq-i summary {
+  padding: 20px 24px; cursor: pointer; font-size: 15px; font-weight: 600;
+  list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  transition: background 0.15s;
+}
+.faq-i summary:hover { background: var(--bg2); }
+.faq-i summary::-webkit-details-marker { display: none; }
+.faq-i summary::after { content: "+"; color: var(--t2); font-size: 24px; font-weight: 400; flex-shrink: 0; line-height: 1; }
+.faq-i[open] summary::after { content: "−"; }
+.faq-a { padding: 0 24px 20px; font-size: 14px; color: var(--t2); line-height: 1.7; }
+
+/* FOOTER */
+.footer { background: #0F172A; color: rgba(255,255,255,0.7); padding: 64px 0 32px; }
+.f-top { text-align: center; margin-bottom: 40px; }
+.f-brand { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+.f-brand-t { font-size: 18px; font-weight: 600; color: #fff; }
+.f-info { font-size: 14px; line-height: 1.9; }
+.f-info strong { color: #fff; font-weight: 600; }
+.f-bot { border-top: 0.5px solid rgba(255,255,255,0.12); padding-top: 24px; margin-top: 40px; font-size: 12px; line-height: 1.7; color: rgba(255,255,255,0.5); text-align: center; max-width: 820px; margin-left: auto; margin-right: auto; }
+.f-copy { text-align: center; font-size: 12.5px; margin-top: 16px; color: rgba(255,255,255,0.6); }
+
+.hidden { display: none; }
+
+/* RESPONSIVIDADE MOBILE (< 768px) */
+@media (max-width: 768px) {
+  .container { padding: 0 20px; }
+  .nav-inner { padding: 14px 0; }
+  .nav-links { display: none; }
+  .nav-actions .btn-ghost { display: none; }
+  .btn-cta-nav { padding: 9px 14px; font-size: 13px; }
+  .brand-icon { width: 32px; height: 32px; }
+  .brand-icon i { font-size: 18px; }
+  .brand-text { font-size: 15px; }
+  .brand-sub { font-size: 9px; }
+
+  .hero { padding: 48px 0 56px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+  .hero-copy { max-width: 100%; }
+  .hero h1 { font-size: 30px; letter-spacing: -0.8px; }
+  .h-sub { font-size: 14.5px; margin-bottom: 28px; }
+  .h-badge { font-size: 10px; letter-spacing: 1.8px; margin-bottom: 22px; padding-left: 12px; }
+  .h-badge::after { display: none; }
+  .bullets { grid-template-columns: 1fr; gap: 10px 0; margin-bottom: 32px; }
+  .bullet { font-size: 13.5px; }
+  .ctas { flex-direction: column; gap: 10px; }
+  .cta-p, .cta-s { width: 100%; justify-content: center; padding: 14px 20px; font-size: 14.5px; }
+  .reinf { font-size: 12px; }
+  .hero-mockup { margin-top: 8px; margin-right: 0; transform: none; max-width: 100%; }
+
+  .trust { padding: 24px 0; }
+  .trust-lg { gap: 10px; }
+  .trust-chip { padding: 8px 14px; font-size: 13px; }
+
+  .sect { padding: 56px 0; }
+  .sect-t { font-size: 26px; letter-spacing: -0.5px; }
+  .sect-s { font-size: 14.5px; margin-bottom: 32px; }
+
+  .showcase { padding: 56px 0 40px; }
+  .sc-head h2 { font-size: 26px; letter-spacing: -0.5px; }
+  .sc-head p { font-size: 14px; padding: 0 8px; }
+  .sc-deco-1, .sc-deco-2, .sc-dots, .sc-wave { display: none; }
+  .sc-blush-blue-1, .sc-blush-green-1 { width: 300px; height: 300px; }
+  .sc-blush-blue-2, .sc-blush-green-2, .sc-blush-center { display: none; }
+  .mockup-wrap { margin-bottom: 40px; }
+  .mockup-wrap::after { left: 12%; right: 12%; height: 20px; }
+  .mockup-wrap--big { margin-bottom: 8px; }
+  .sc-imagine { font-size: 28px; margin-bottom: 32px; }
+  .sc-foot { font-size: 15px; margin-top: 40px; }
+
+  .p-grid { gap: 14px; }
+  .p-card { padding: 22px 18px; }
+  .p-t { font-size: 16px; }
+  .p-d { font-size: 13.5px; }
+  .callout { font-size: 14.5px; padding: 18px 20px; margin-top: 32px; }
+
+  .steps-zig { gap: 40px; }
+  .step-num { font-size: 40px; }
+  .step-t { font-size: 18px; }
+  .step-d { font-size: 14px; max-width: 100%; }
+
+  .f-grid { gap: 14px; }
+  .f-card { padding: 22px 18px; }
+
+  .course { padding: 56px 0; }
+  .course-inner { grid-template-columns: 1fr; gap: 32px; }
+  .course-t { font-size: 26px; letter-spacing: -0.5px; }
+  .course-sub { font-size: 14.5px; }
+  .course-list li { font-size: 14px; padding: 8px 0; }
+  .course-meta { gap: 14px 16px; }
+  .course-meta-item { font-size: 12.5px; }
+  .course-visual { max-width: 340px; margin: 0 auto; }
+
+  .recap-row { padding: 14px 18px; }
+  .recap-name { font-size: 13.5px; }
+  .recap-price { font-size: 13.5px; }
+  .plan { padding: 30px 22px; }
+  .pl-val { font-size: 40px; }
+
+  .cta-final { padding: 56px 0; }
+  .cta-final h2 { font-size: 26px; letter-spacing: -0.5px; }
+  .cta-final p { font-size: 14.5px; margin-bottom: 24px; }
+  .cta-fb { padding: 15px 26px; font-size: 15px; }
+
+  .faq-i summary { padding: 16px 18px; font-size: 14px; }
+  .faq-a { padding: 0 18px 16px; font-size: 13.5px; }
+
+  .footer { padding: 48px 0 24px; }
+}
+
+@media (max-width: 380px) {
+  .hero h1 { font-size: 26px; }
+  .sect-t, .sc-head h2, .course-t, .cta-final h2 { font-size: 23px; }
+}
+
+/* PRINT (PDF export) */
+@media print {
+  body { font-size: 12pt; }
+  .nav { position: static; }
+  .sect { padding: 40px 0; page-break-inside: auto; }
+  .hero { padding: 60px 0; page-break-after: avoid; }
+  .cta-final { page-break-inside: avoid; }
+  .footer { page-break-inside: avoid; }
+  .plan, .f-card, .sol-card, .p-card, .step-card, .faq-i { page-break-inside: avoid; }
+  .faq-i summary { padding: 12px 16px; }
+  .faq-i:not([open]) .faq-a { display: block; padding: 0 16px 12px; }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="h-badge">Gestão financeira simples, visual e automática</div>
+          <h1>Organize as finanças da sua empresa <span>em minutos</span> e aumente o lucro sem precisar virar um expert em finanças</h1>
+          <p class="h-sub">Pare de ver seu dinheiro sumindo sem saber para onde foi. Com o Mapa da Gestão Financeira, você terá controle total do seu caixa, lucro e despesas — tudo de forma simples, rápida e visual.</p>
+          <div class="bullets">
+            <div class="bullet"><i class="ti ti-clock-hour-4" aria-hidden="true"></i>Organize em 15 minutos</div>
+            <div class="bullet"><i class="ti ti-circle-check" aria-hidden="true"></i>Planilha validada na prática</div>
+            <div class="bullet"><i class="ti ti-bolt" aria-hidden="true"></i>Cálculos 100% automáticos</div>
+            <div class="bullet"><i class="ti ti-layout-dashboard" aria-hidden="true"></i>Dashboard visual e intuitivo</div>
+          </div>
+          <div class="reinf">
+            <span>Acesso imediato</span>
+            <span class="dot"></span>
+            <span>Pagamento único</span>
+            <span class="dot"></span>
+            <span>Acesso vitalício</span>
+          </div>
+        </div>
+        <div class="hero-mockup">
+          <picture>
+            <source srcset="images/hero-mockup.webp" type="image/webp">
+            <img src="images/hero-mockup.png" alt="Planilha Mapa da Gestão Financeira em desktop, tablet e celular" width="1200" height="800" fetchpriority="high" decoding="async">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a class="scroll-cue" href="#dor" aria-label="Rolar para ver mais"><i class="ti ti-chevron-down" aria-hidden="true"></i></a>
+
+<section class="trust">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="trust-l">Uma ferramenta prática, visual e automatizada que organiza tudo pra você</div>
+      <div class="trust-lg">
+        <div class="trust-chip"><i class="ti ti-clock-hour-4" aria-hidden="true"></i>Pronto em 15 minutos</div>
+        <div class="trust-chip"><i class="ti ti-circle-check" aria-hidden="true"></i>Validada</div>
+        <div class="trust-chip"><i class="ti ti-bolt" aria-hidden="true"></i>Automática</div>
+        <div class="trust-chip"><i class="ti ti-infinity" aria-hidden="true"></i>Acesso vitalício</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sect" id="dor">
+  <div class="container">
+    <h2 class="sect-t">Você vende… mas o seu financeiro te deixa de cabelo em pé?</h2>
+    <p class="sect-s">Se essas perguntas passam pela sua cabeça toda semana, você não está sozinho — e tem solução.</p>
+    <div class="p-grid">
+      <div class="p-card">
+        <div class="p-ico"><i class="ti ti-mood-confuzed" aria-hidden="true"></i></div>
+        <h3 class="p-t">"Será que tô no lucro?"</h3>
+      </div>
+      <div class="p-card">
+        <div class="p-ico"><i class="ti ti-mood-empty" aria-hidden="true"></i></div>
+        <h3 class="p-t">"Quanto eu já vendi esse mês?"</h3>
+      </div>
+      <div class="p-card">
+        <div class="p-ico"><i class="ti ti-mood-nervous" aria-hidden="true"></i></div>
+        <h3 class="p-t">"Será que eu paguei todas as contas?"</h3>
+      </div>
+      <div class="p-card">
+        <div class="p-ico"><i class="ti ti-mood-sad" aria-hidden="true"></i></div>
+        <h3 class="p-t">"Até hoje não consigo ter clareza dos meus números!"</h3>
+      </div>
+      <div class="p-card">
+        <div class="p-ico"><i class="ti ti-mood-cry" aria-hidden="true"></i></div>
+        <h3 class="p-t">"Pra onde está indo todo o dinheiro?"</h3>
+      </div>
+      <div class="p-card">
+        <div class="p-ico"><i class="ti ti-mood-annoyed" aria-hidden="true"></i></div>
+        <h3 class="p-t">"Como faço para cortar despesas?"</h3>
+      </div>
+    </div>
+    <div class="callout">
+      <i class="ti ti-alert-triangle" aria-hidden="true"></i>
+      <div>A verdade é que <strong>sem um controle financeiro claro e rápido, você está tomando decisões no escuro</strong> — e isso custa caro!</div>
+    </div>
+  </div>
+</section>
+
+<section class="showcase">
+  <div class="sc-blush sc-blush-blue-1" aria-hidden="true"></div>
+  <div class="sc-blush sc-blush-green-1" aria-hidden="true"></div>
+  <div class="sc-blush sc-blush-blue-2" aria-hidden="true"></div>
+  <div class="sc-blush sc-blush-green-2" aria-hidden="true"></div>
+  <div class="sc-blush sc-blush-center" aria-hidden="true"></div>
+
+  <div class="sc-deco-1" aria-hidden="true">
+    <div class="sc-bar"></div>
+    <div class="sc-bar"></div>
+    <div class="sc-bar"></div>
+  </div>
+
+  <div class="sc-deco-2" aria-hidden="true">
+    <div class="sc-pie"></div>
+    <div class="sc-lines"><span></span><span></span><span></span></div>
+  </div>
+
+  <div class="sc-dots sc-dots-1" aria-hidden="true"></div>
+  <div class="sc-dots sc-dots-2" aria-hidden="true"></div>
+
+  <svg class="sc-wave sc-wave-1" viewBox="-6 -6 292 92" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M0 65 Q80 55 140 40 Q210 22 280 12" stroke="#10B981" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.75"/>
+  </svg>
+
+  <svg class="sc-wave sc-wave-2" viewBox="-8 -8 336 126" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <linearGradient id="serroteGrad" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0%" stop-color="#1E3A8A"/>
+        <stop offset="35%" stop-color="#2563EB"/>
+        <stop offset="70%" stop-color="#3B82F6"/>
+        <stop offset="100%" stop-color="#10B981"/>
+      </linearGradient>
+    </defs>
+    <path d="M0 85 L55 70 L110 78 L165 45 L220 55 L275 22 L320 8" stroke="url(#serroteGrad)" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="85" r="4.5" fill="#1E3A8A"/>
+    <circle cx="55" cy="70" r="4.5" fill="#2563EB"/>
+    <circle cx="110" cy="78" r="4.5" fill="#2563EB"/>
+    <circle cx="165" cy="45" r="4.5" fill="#3B82F6"/>
+    <circle cx="220" cy="55" r="4.5" fill="#3B82F6"/>
+    <circle cx="275" cy="22" r="4.5" fill="#10B981"/>
+    <circle cx="320" cy="8" r="4.5" fill="#10B981"/>
+  </svg>
+
+  <div class="container">
+    <div class="showcase-inner">
+      <div class="sc-head">
+        <h2>E se você tivesse controle total do seu financeiro em poucos minutos por semana?</h2>
+      </div>
+      <div class="mockup-wrap mockup-wrap--big">
+        <picture>
+          <source srcset="images/mockup-dashboard.webp" type="image/webp">
+          <img src="images/mockup-dashboard.png" alt="Dashboard do Mapa da Gestão Financeira em desktop, notebook, tablet e celular" width="1600" height="1067" loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <p class="sc-caption">*Imagem real da planilha</p>
+      <h3 class="sc-imagine"><span>Imagine você…</span></h3>
+      <div class="sol-grid">
+        <div class="sol-card">
+          <div class="sol-ico"><i class="ti ti-eye-check" aria-hidden="true"></i></div>
+          <h3 class="sol-t">Visão clara do fluxo de caixa</h3>
+          <p class="sol-d">Tenha uma visão clara e precisa do fluxo de caixa da sua empresa e se localize no meio de tantos números.</p>
+        </div>
+        <div class="sol-card">
+          <div class="sol-ico"><i class="ti ti-report-money" aria-hidden="true"></i></div>
+          <h3 class="sol-t">Lucro garantido com o DRE</h3>
+          <p class="sol-d">Garanta que sua empresa gere lucro com uma análise detalhada do seu DRE.</p>
+        </div>
+        <div class="sol-card">
+          <div class="sol-ico"><i class="ti ti-calendar-dollar" aria-hidden="true"></i></div>
+          <h3 class="sol-t">Contas a pagar e receber</h3>
+          <p class="sol-d">Organize as contas a pagar e a receber para evitar multas, atrasos e juros.</p>
+        </div>
+        <div class="sol-card">
+          <div class="sol-ico"><i class="ti ti-adjustments-dollar" aria-hidden="true"></i></div>
+          <h3 class="sol-t">Gastos e orçamento sob controle</h3>
+          <p class="sol-d">Controle melhor os gastos e planeje o orçamento de forma estratégica.</p>
+        </div>
+        <div class="sol-card">
+          <div class="sol-ico"><i class="ti ti-chart-arrows-vertical" aria-hidden="true"></i></div>
+          <h3 class="sol-t">Decisões assertivas</h3>
+          <p class="sol-d">Acompanhe o desempenho do negócio para tomar decisões assertivas.</p>
+        </div>
+      </div>
+      <p class="sc-foot">Sem perder horas montando planilhas complicadas ou tentando entender relatórios confusos. Com o <strong>Mapa da Gestão Financeira</strong>, você tem uma ferramenta prática, visual e automatizada que organiza tudo pra você — e <strong>transforma confusão em clareza</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sect sect-alt" id="passos">
+  <div class="container">
+    <h2 class="sect-t">4 passos para organizar as finanças da sua empresa</h2>
+    <p class="sect-s">Simples assim. Do primeiro lançamento à decisão estratégica, sem complicação.</p>
+    <div class="steps-zig">
+      <div class="step-row">
+        <div class="step-media">
+          <picture>
+            <source srcset="images/passo-01.webp" type="image/webp">
+            <img src="images/passo-01.png" alt="Tela do Mapa da Gestão Financeira — insira seus dados" width="1000" height="720" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="step-body">
+          <div class="step-kicker"><span class="step-label">Passo</span><span class="step-num">01</span></div>
+          <h3 class="step-t">Insira seus dados</h3>
+          <p class="step-d">Baixe o Mapa da Gestão Financeira, insira as informações iniciais e personalize de acordo com a realidade da sua empresa.</p>
+        </div>
+      </div>
+      <div class="step-row flip">
+        <div class="step-media">
+          <picture>
+            <source srcset="images/passo-02.webp" type="image/webp">
+            <img src="images/passo-02.png" alt="Tela do Mapa da Gestão Financeira — registre vendas e despesas" width="1000" height="720" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="step-body">
+          <div class="step-kicker"><span class="step-label">Passo</span><span class="step-num">02</span></div>
+          <h3 class="step-t">Registre suas vendas e despesas</h3>
+          <p class="step-d">Com poucos cliques, cadastre vendas e despesas. A planilha já faz todos os cálculos e organiza as informações para você.</p>
+        </div>
+      </div>
+      <div class="step-row">
+        <div class="step-media">
+          <picture>
+            <source srcset="images/passo-03.webp" type="image/webp">
+            <img src="images/passo-03.png" alt="Tela do Mapa da Gestão Financeira — visualize os resultados" width="1000" height="720" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="step-body">
+          <div class="step-kicker"><span class="step-label">Passo</span><span class="step-num">03</span></div>
+          <h3 class="step-t">Visualize os resultados</h3>
+          <p class="step-d">Acompanhe no Dashboard o lucro, o fluxo de caixa e as metas em gráficos claros e objetivos.</p>
+        </div>
+      </div>
+      <div class="step-row flip">
+        <div class="step-media">
+          <picture>
+            <source srcset="images/passo-04.webp" type="image/webp">
+            <img src="images/passo-04.png" alt="Tela do Mapa da Gestão Financeira — tome decisões inteligentes" width="1000" height="720" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="step-body">
+          <div class="step-kicker"><span class="step-label">Passo</span><span class="step-num">04</span></div>
+          <h3 class="step-t">Tome decisões inteligentes</h3>
+          <p class="step-d">Use os Dashboards e relatórios para fazer escolhas estratégicas com confiança e aumentar suas vendas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sect" id="recursos">
+  <div class="container">
+    <h2 class="sect-t">Tudo o que você recebe no Mapa da Gestão Financeira</h2>
+    <p class="sect-s">Para seguir os 4 passos sem falhar e, de vez, organizar o financeiro do seu negócio.</p>
+    <div class="f-grid">
+      <div class="f-card"><div class="f-ico"><i class="ti ti-table" aria-hidden="true"></i></div><h3 class="f-t">Planilha Profissional de Gestão Financeira</h3><p class="f-d">A ferramenta completa para controlar caixa, vendas, despesas, DRE e metas em um só lugar.</p></div>
+      <div class="f-card"><div class="f-ico"><i class="ti ti-layout-dashboard" aria-hidden="true"></i></div><h3 class="f-t">Dashboard Visual</h3><p class="f-d">Lucro, fluxo de caixa e metas em gráficos claros e objetivos. Bata o olho e saiba onde está.</p></div>
+      <div class="f-card"><div class="f-ico"><i class="ti ti-player-play" aria-hidden="true"></i></div><h3 class="f-t">Videoaula de Uso da Planilha</h3><p class="f-d">Passo a passo em vídeo para você começar a usar hoje mesmo, sem travar.</p></div>
+      <div class="f-card"><div class="f-ico"><i class="ti ti-school" aria-hidden="true"></i></div><h3 class="f-t">Masterclass de Gestão Financeira <span class="f-badge">Bônus</span></h3><p class="f-d">Aula completa para você interpretar seus números e decidir com base em dados.</p></div>
+      <div class="f-card"><div class="f-ico"><i class="ti ti-refresh" aria-hidden="true"></i></div><h3 class="f-t">Atualizações Gratuitas <span class="f-badge">Bônus</span></h3><p class="f-d">Toda nova versão da planilha chega até você sem custo adicional.</p></div>
+      <div class="f-card"><div class="f-ico"><i class="ti ti-calculator" aria-hidden="true"></i></div><h3 class="f-t">Simulador de Financiamento <span class="f-badge">Bônus</span></h3><p class="f-d">Simule parcelas, juros e prazos antes de assumir qualquer financiamento.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sect sect-alt">
+  <div class="container">
+    <h2 class="sect-t">O Mapa da Gestão Financeira é para você que…</h2>
+    <p class="sect-s">Se você toma decisões sobre dinheiro no seu negócio, essa planilha foi pensada pra você.</p>
+    <div class="a-grid">
+      <div class="a-card"><i class="ti ti-check" aria-hidden="true"></i><div class="a-l">É dono ou gestor de empresa</div></div>
+      <div class="a-card"><i class="ti ti-check" aria-hidden="true"></i><div class="a-l">Quer se localizar na gestão financeira do negócio</div></div>
+      <div class="a-card"><i class="ti ti-check" aria-hidden="true"></i><div class="a-l">Quer ter uma visão clara do fluxo de caixa</div></div>
+      <div class="a-card"><i class="ti ti-check" aria-hidden="true"></i><div class="a-l">Precisa organizar vendas, contas a pagar e a receber</div></div>
+      <div class="a-card"><i class="ti ti-check" aria-hidden="true"></i><div class="a-l">Busca controlar gastos e planejar o orçamento</div></div>
+      <div class="a-card"><i class="ti ti-check" aria-hidden="true"></i><div class="a-l">Deseja aumentar a lucratividade</div></div>
+      <div class="a-card"><i class="ti ti-check" aria-hidden="true"></i><div class="a-l">Precisa de uma solução financeira rápida e prática</div></div>
+    </div>
+    <div class="callout">
+      <i class="ti ti-alert-triangle" aria-hidden="true"></i>
+      <div>Se você se identifica com <strong>ao menos 2 itens acima</strong>, o Mapa da Gestão Financeira é para você!</div>
+    </div>
+  </div>
+</section>
+
+<section class="sect" id="oferta">
+  <div class="container">
+    <h2 class="sect-t">Recapitulando tudo que você vai receber no Mapa da Gestão Financeira</h2>
+    <div class="recap">
+      <div class="recap-row"><div class="recap-name">Planilha Profissional de Gestão Financeira</div><div class="recap-price">R$ 197,00</div></div>
+      <div class="recap-row"><div class="recap-name">Dashboard Visual</div><div class="recap-price">R$ 197,00</div></div>
+      <div class="recap-row"><div class="recap-name">Videoaula de Uso da Planilha de Gestão Financeira</div><div class="recap-price">R$ 97,00</div></div>
+      <div class="recap-row"><div class="recap-name"><strong>BÔNUS:</strong> Masterclass de Gestão Financeira</div><div class="recap-price">R$ 97,00</div></div>
+      <div class="recap-row"><div class="recap-name"><strong>BÔNUS:</strong> Atualizações Gratuitas</div><div class="recap-price">R$ 97,00</div></div>
+      <div class="recap-row"><div class="recap-name"><strong>BÔNUS:</strong> Simulador de Financiamento</div><div class="recap-price">R$ 97,00</div></div>
+    </div>
+    <p class="recap-total">No total, isso tudo deveria custar <s>R$ 782,00</s>.</p>
+    <p class="recap-lead">Mas hoje você vai ter acesso ao Mapa da Gestão Financeira completo por apenas:</p>
+
+    <div class="plans">
+      <div class="plan single">
+        <div class="pl-media"><picture><source srcset="images/oferta-mgf.webp" type="image/webp"><img src="images/oferta-mgf.png" alt="Mapa da Gestão Financeira" width="600" height="340" loading="lazy" decoding="async"></picture></div>
+        <div class="pl-name">Mapa da Gestão Financeira</div>
+        <div class="pl-tag">Você só paga uma vez esse valor!</div>
+        <ul class="pl-includes">
+          <li><i class="ti ti-check" aria-hidden="true"></i>Planilha Profissional de Gestão Financeira</li>
+          <li><i class="ti ti-check" aria-hidden="true"></i>Dashboard Visual</li>
+          <li><i class="ti ti-check" aria-hidden="true"></i>Videoaula de uso da planilha</li>
+          <li><i class="ti ti-check" aria-hidden="true"></i>Bônus: Masterclass de Gestão Financeira</li>
+          <li><i class="ti ti-check" aria-hidden="true"></i>Bônus: Atualizações gratuitas</li>
+          <li><i class="ti ti-check" aria-hidden="true"></i>Bônus: Simulador de Financiamento</li>
+        </ul>
+        <div class="pl-access"><i class="ti ti-infinity" aria-hidden="true"></i>Acesso imediato e vitalício</div>
+        <div class="pl-price"><span class="pl-cur">R$</span><span class="pl-val">67,00</span><span class="pl-per">à vista</span></div>
+        <div class="pl-sub">ou <strong>9x de R$ 8,80</strong></div>
+        <a class="pl-cta" href="https://pay.hotmart.com/F108045307E?checkoutMode=10">Sim, eu quero organizar as finanças do meu negócio</a>
+        <p class="pl-note">Condição especial por tempo limitado</p>
+      </div>
+
+      <div class="plan rec">
+        <div class="pl-badge">Combo 3x1 — mais vendido</div>
+        <div class="pl-media"><picture><source srcset="images/oferta-combo.webp" type="image/webp"><img src="images/oferta-combo.png" alt="Combo Gestão Financeira Completa 3x1" width="600" height="340" loading="lazy" decoding="async"></picture></div>
+        <div class="pl-name">Combo Gestão Financeira Completa</div>
+        <div class="pl-tag">Três ferramentas pelo preço de uma condição especial.</div>
+        <ul class="pl-includes pl-includes--hl">
+          <li><i class="ti ti-check" aria-hidden="true"></i><strong>TUDO DO MAPA DA GESTÃO FINANCEIRA</strong></li>
+          <li><i class="ti ti-check" aria-hidden="true"></i>Planilha Profissional de Precificação</li>
+          <li><i class="ti ti-check" aria-hidden="true"></i>Planilha de Finanças Pessoais</li>
+        </ul>
+        <div class="pl-access"><i class="ti ti-infinity" aria-hidden="true"></i>Acesso imediato e vitalício</div>
+        <div class="pl-price"><span class="pl-cur">R$</span><span class="pl-val">117,00</span><span class="pl-per">à vista</span></div>
+        <div class="pl-sub">ou <strong>12x de R$ 12,10</strong></div>
+        <a class="pl-cta" href="https://pay.hotmart.com/M108099399C">Quero aproveitar o Combo 3x1</a>
+        <p class="pl-note">Condição especial por tempo limitado</p>
+      </div>
+    </div>
+
+    <div class="pay">
+      <span><i class="ti ti-credit-card" aria-hidden="true"></i>Cartão de crédito</span>
+      <span><i class="ti ti-brand-mastercard" aria-hidden="true"></i>Pix</span>
+    </div>
+
+    <div class="countdown">
+      <div class="cd-label"><i class="ti ti-clock-hour-3" aria-hidden="true"></i> A condição especial termina em</div>
+      <div class="cd-clock">
+        <div class="cd-box"><span class="cd-h">00</span><small>horas</small></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><span class="cd-m">00</span><small>min</small></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><span class="cd-s">00</span><small>seg</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sect sect-alt">
+  <div class="container">
+    <h2 class="sect-t">Cada dia sem controle financeiro está custando muito mais do que você imagina</h2>
+    <div class="custo-grid">
+      <div class="custo-copy">
+        <p>Quantas vezes você já ficou horas quebrando a cabeça com as finanças do seu negócio? <strong>Muitas, né?</strong></p>
+        <p>Você continua preso nesse ciclo frustrante de insegurança, desorganização e medo de cometer erros. Enquanto outros empresários prosperam, você ainda sofre com algo que deveria ser básico:</p>
+        <ul class="custo-list">
+          <li><i class="ti ti-x" aria-hidden="true"></i>Sem saber onde estão os números do seu negócio</li>
+          <li><i class="ti ti-x" aria-hidden="true"></i>Com medo das contas e dos números</li>
+          <li><i class="ti ti-x" aria-hidden="true"></i>Com medo de tomar decisões erradas</li>
+        </ul>
+        <p>Eu acredito que você não quer mais isso. Você está pronto para dar um passo além na sua carreira. <strong>O problema não é você</strong>, mas a falta das ferramentas certas para trabalhar.</p>
+        <p><strong>É por isso que você precisa do Mapa da Gestão Financeira!</strong></p>
+      </div>
+      <div class="custo-visual">
+        <img src="images/custo.png" alt="Empresário preocupado com as finanças do negócio" width="800" height="1000" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="course">
+  <div class="container">
+    <div class="course-inner">
+      <div>
+        <div class="course-tag">Quem criou o Mapa da Gestão Financeira</div>
+        <h2 class="course-t"><span>Wesley Schroeder</span> é o criador do Mapa da Gestão Financeira</h2>
+        <p class="course-sub">Engenheiro de formação, com MBA e Black Belt e especializações em gestão. É especialista em Gestão Estratégica, Financeira, Projetos, Metas e Indicadores.</p>
+        <ul class="course-list">
+          <li><i class="ti ti-building-factory-2" aria-hidden="true"></i>Iniciou a carreira como estagiário em uma das maiores indústrias farmacêuticas do país — virou Analista, Supervisor e chegou a Gerente de Operações, à frente de uma fábrica com 120 funcionários.</li>
+          <li><i class="ti ti-trending-up" aria-hidden="true"></i>Atuou como VP de uma empresa de educação, transformando-a de um negócio de 2 milhões de faturamento/ano para mais de 30 milhões em 2 anos.</li>
+          <li><i class="ti ti-briefcase" aria-hidden="true"></i>Hoje é empresário e mentor de negócios, com mais de 10 anos de experiência em gestão.</li>
+          <li><i class="ti ti-coin" aria-hidden="true"></i>Já tocou orçamentos de mais de 12 milhões de reais.</li>
+        </ul>
+      </div>
+      <div class="course-visual">
+        <div class="course-visual-badge"><i class="ti ti-user-star" aria-hidden="true"></i>Criador</div>
+        <picture>
+          <source srcset="images/autor-wesley.webp" type="image/webp">
+          <img src="images/autor-wesley.png" alt="Wesley Schroeder, criador do Mapa da Gestão Financeira" width="900" height="1125" loading="lazy" decoding="async">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sect sect-alt" id="oferta-2">
+  <div class="container">
+    <h2 class="sect-t">Garanta agora o seu Mapa da Gestão Financeira</h2>
+    <p class="recap-lead">Mesmo valor, mesma condição especial — comece a organizar o financeiro do seu negócio hoje:</p>
+
+    <div class="plans">
+      <div class="plan single">
+        <div class="pl-media"><picture><source srcset="images/oferta-mgf.webp" type="image/webp"><img src="images/oferta-mgf.png" alt="Mapa da Gestão Financeira" width="600" height="340" loading="lazy" decoding="async"></picture></div>
+        <div class="pl-name">Mapa da Gestão Financeira</div>
+        <div class="pl-tag">Você só paga uma vez esse valor!</div>
+        <ul class="pl-includes">
+          <li><i class="ti ti-check" aria-hidden="true"></i>Planilha Profissional de Gestão Financeira</li>
+          <li><i class="ti ti-check" aria-hidden="true"></i>Dashboard Visual</li>
+          <li><i class="ti ti-check" aria-hidden="true"></i>Videoaula de uso da planilha</li>
+          <li><i class="ti ti-check" aria-hidden="true"></i>Bônus: Masterclass de Gestão Financeira</li>
+          <li><i class="ti ti-check" aria-hidden="true"></i>Bônus: Atualizações gratuitas</li>
+          <li><i class="ti ti-check" aria-hidden="true"></i>Bônus: Simulador de Financiamento</li>
+        </ul>
+        <div class="pl-access"><i class="ti ti-infinity" aria-hidden="true"></i>Acesso imediato e vitalício</div>
+        <div class="pl-price"><span class="pl-cur">R$</span><span class="pl-val">67,00</span><span class="pl-per">à vista</span></div>
+        <div class="pl-sub">ou <strong>9x de R$ 8,80</strong></div>
+        <a class="pl-cta" href="https://pay.hotmart.com/F108045307E?checkoutMode=10">Sim, eu quero organizar as finanças do meu negócio</a>
+        <p class="pl-note">Condição especial por tempo limitado</p>
+      </div>
+
+      <div class="plan rec">
+        <div class="pl-badge">Combo 3x1 — mais vendido</div>
+        <div class="pl-media"><picture><source srcset="images/oferta-combo.webp" type="image/webp"><img src="images/oferta-combo.png" alt="Combo Gestão Financeira Completa 3x1" width="600" height="340" loading="lazy" decoding="async"></picture></div>
+        <div class="pl-name">Combo Gestão Financeira Completa</div>
+        <div class="pl-tag">Três ferramentas pelo preço de uma condição especial.</div>
+        <ul class="pl-includes pl-includes--hl">
+          <li><i class="ti ti-check" aria-hidden="true"></i><strong>TUDO DO MAPA DA GESTÃO FINANCEIRA</strong></li>
+          <li><i class="ti ti-check" aria-hidden="true"></i>Planilha Profissional de Precificação</li>
+          <li><i class="ti ti-check" aria-hidden="true"></i>Planilha de Finanças Pessoais</li>
+        </ul>
+        <div class="pl-access"><i class="ti ti-infinity" aria-hidden="true"></i>Acesso imediato e vitalício</div>
+        <div class="pl-price"><span class="pl-cur">R$</span><span class="pl-val">117,00</span><span class="pl-per">à vista</span></div>
+        <div class="pl-sub">ou <strong>12x de R$ 12,10</strong></div>
+        <a class="pl-cta" href="https://pay.hotmart.com/M108099399C">Quero aproveitar o Combo 3x1</a>
+        <p class="pl-note">Condição especial por tempo limitado</p>
+      </div>
+    </div>
+
+    <div class="pay">
+      <span><i class="ti ti-credit-card" aria-hidden="true"></i>Cartão de crédito</span>
+      <span><i class="ti ti-brand-mastercard" aria-hidden="true"></i>Pix</span>
+    </div>
+
+    <div class="countdown">
+      <div class="cd-label"><i class="ti ti-clock-hour-3" aria-hidden="true"></i> A condição especial termina em</div>
+      <div class="cd-clock">
+        <div class="cd-box"><span class="cd-h">00</span><small>horas</small></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><span class="cd-m">00</span><small>min</small></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><span class="cd-s">00</span><small>seg</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="container">
+    <div class="cta-final-inner">
+      <h2>Pronto para sair do escuro e organizar o financeiro do seu negócio?</h2>
+      <p>Acesso imediato e vitalício. Você paga uma única vez e começa a ter clareza dos seus números hoje mesmo.</p>
+      <a class="cta-fb" href="#oferta"><i class="ti ti-rocket" aria-hidden="true"></i>Quero o Mapa da Gestão Financeira</a>
+      <div class="cta-fs">Acesso imediato · Pagamento único · Cartão de crédito ou Pix</div>
+    </div>
+  </div>
+</section>
+
+<section class="sect">
+  <div class="container">
+    <h2 class="sect-t">Perguntas Frequentes</h2>
+    <p class="sect-s">Se ficou alguma dúvida que não está aqui, fala com a gente.</p>
+    <div class="faq">
+      <details class="faq-i" open><summary>Como vou acessar?</summary><div class="faq-a">Assim que o seu pagamento for concluído, enviaremos um e-mail com todos os dados de acesso para você baixar o produto junto com todos os bônus.</div></details>
+      <details class="faq-i"><summary>Qual é a forma de pagamento?</summary><div class="faq-a">Você pode pagar com cartão de crédito (parcelado) ou Pix (à vista). É só escolher a opção que preferir na tela de checkout.</div></details>
+      <details class="faq-i"><summary>O pagamento é seguro?</summary><div class="faq-a">Sim. A compra é processada em ambiente 100% seguro e criptografado, por plataforma de pagamento reconhecida. Seus dados ficam protegidos do início ao fim.</div></details>
+      <details class="faq-i"><summary>Funciona pra mim?</summary><div class="faq-a">Se você é dono ou gestor de empresa e precisa organizar caixa, vendas, despesas e metas, o Mapa da Gestão Financeira foi feito pra você — mesmo que você não entenda nada de finanças.</div></details>
+      <details class="faq-i"><summary>Tem garantia?</summary><div class="faq-a">Sim. Você conta com a garantia de satisfação. Se dentro do prazo você sentir que não é pra você, é só solicitar o reembolso.</div></details>
+      <details class="faq-i"><summary>A planilha funciona no meu Excel?</summary><div class="faq-a">Sim. A planilha funciona no Microsoft Excel e também pode ser usada no Google Sheets. Você recebe a videoaula mostrando o passo a passo para começar.</div></details>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <div class="brand-icon"><i class="ti ti-chart-pie" aria-hidden="true"></i></div>
+        <div class="f-brand-t">P4 Gestão</div>
+      </div>
+      <div class="f-info">
+        Esse é um serviço oferecido por <strong>P4 Gestão</strong><br>
+        P4 GESTÃO LTDA — CNPJ: 50.447.295/0001-17<br>
+        Endereço: 13 de Abril, 1295 — Vila Industrial — Toledo/PR<br>
+        E-mail: p4gestao@gmail.com
+      </div>
+    </div>
+    <div class="f-bot">
+      Todos os Direitos Reservados © Este site não é afiliado ao Meta ou a qualquer entidade da Meta. Depois que você sai da Meta, a responsabilidade não é deles e sim do nosso site. A compra desse material não garante nenhum tipo de resultado. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais de alunos.
+    </div>
+    <div class="f-copy">© 2026 P4 Gestão · Mapa da Gestão Financeira · Todos os direitos reservados</div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Contagem regressiva até o fim do dia de hoje (reinicia todo dia automaticamente)
+  function two(n){ return (n < 10 ? '0' : '') + n; }
+  function endOfToday(){ var d = new Date(); d.setHours(23, 59, 59, 999); return d.getTime(); }
+  function tick(){
+    var diff = endOfToday() - Date.now();
+    if (diff < 0) diff = 0;
+    var h = Math.floor(diff / 3600000);
+    var m = Math.floor((diff % 3600000) / 60000);
+    var s = Math.floor((diff % 60000) / 1000);
+    document.querySelectorAll('.cd-h').forEach(function (e){ e.textContent = two(h); });
+    document.querySelectorAll('.cd-m').forEach(function (e){ e.textContent = two(m); });
+    document.querySelectorAll('.cd-s').forEach(function (e){ e.textContent = two(s); });
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+
+// Dispara "InitiateCheckout" no Meta Pixel ao clicar nos botões de compra
+(function () {
+  document.querySelectorAll('.pl-cta').forEach(function (a) {
+    a.addEventListener('click', function () {
+      if (typeof fbq === 'function') fbq('track', 'InitiateCheckout');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

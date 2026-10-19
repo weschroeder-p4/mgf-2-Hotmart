@@ -1,0 +1,21 @@
+# Segurança básica em todo o site
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# Cache agressivo para imagens (versione o nome do arquivo ao trocar)
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache agressivo para fontes self-hosted
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache do HTML curto — permite atualizar quando republicar
+/*.html
+  Cache-Control: public, max-age=300, must-revalidate
+
+/
+  Cache-Control: public, max-age=300, must-revalidate
